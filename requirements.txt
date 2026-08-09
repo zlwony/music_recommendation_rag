@@ -1,0 +1,10 @@
+datasets
+chromadb
+langchain-chroma
+langchain-core
+langchain-huggingface
+langchain-text-splitters
+langchain-upstage
+langchain-ollama
+google-api-python-client
+python-dotenv

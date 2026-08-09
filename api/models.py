@@ -1,0 +1,16 @@
+from pydantic import BaseModel
+from typing import Literal
+
+class HistoryItem(BaseModel):
+    question: str
+    answer: str
+
+class SearchRequest(BaseModel):
+    question: str
+    history: list[HistoryItem] = []
+    taste_genres: list[str] = []
+
+class SearchResponse(BaseModel):
+    source: Literal['spotify', 'youtube', 'none']
+    answer: str
+
